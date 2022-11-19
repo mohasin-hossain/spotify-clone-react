@@ -4,8 +4,8 @@ import { RiCloseLine } from 'react-icons/ri';
 import { NavLink } from 'react-router-dom';
 
 import { HiOutlineMenu } from 'react-icons/hi';
-import spotifylogo from '../assets/spotifylogo.png';
 import { links } from '../assets/constants';
+import spotifylogo from '../assets/spotifylogo.png';
 
 const NavLinks = ({ handleClick }) => (
   <div className="mt-10">
@@ -43,7 +43,7 @@ const Sidebar = () => {
           />
         ) : (
           <HiOutlineMenu
-            classsName="w-6 h-6 text-white mr-2"
+            className="w-6 h-6 text-white mr-2"
             onClick={() => setMobileMenuOpen(true)}
           />
         )}
