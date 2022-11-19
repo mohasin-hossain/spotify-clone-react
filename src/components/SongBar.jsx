@@ -16,7 +16,7 @@ const SongBar = ({ song, i, artistId, isPlaying, activeSong, handlePauseClick, h
         {!artistId ? (
           <Link to={`/songs/${song.key}`}>
             <p className="text-xl font-bold text-white">
-              {song?.title}
+              {song?.title.slice(0, 30)}
             </p>
           </Link>
         ) : (
@@ -25,7 +25,7 @@ const SongBar = ({ song, i, artistId, isPlaying, activeSong, handlePauseClick, h
           </p>
         )}
         <p className="text-base text-gray-300 mt-1">
-          {artistId ? song?.attributes?.albumName : song?.subtitle}
+          {artistId ? song?.attributes?.albumName : song?.subtitle.slice(0, 20)}
         </p>
       </div>
     </div>

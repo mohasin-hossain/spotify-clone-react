@@ -16,7 +16,7 @@ const Search = () => {
   return (
     <div className="flex flex-col">
       <h2 className="font-bold text-2xl text-white text-left mt-4 mb-10">
-        Showing results for <span className='text-cyan-400'>"{searchTerm}"</span>
+        Showing results for <span className="text-cyan-400">"{searchTerm}"</span>
       </h2>
       <div className="flex flex-wrap sm:justify-start justify-center gap-4">
         {songs?.map((song, i) => (
